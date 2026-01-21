@@ -1,0 +1,78 @@
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Background */
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5) blur(2px);
+}
+
+/* Header */
+.page-header {
+  text-align: center;
+  color: white;
+  padding: 40px 20px;
+}
+.page-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.page-header p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Button Grid */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Donation Card Buttons */
+.donation-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 50px 20px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.donation-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Category-specific colors */
+.food { background: linear-gradient(135deg, #facc15, #f97316); color: #fff; }
+.clothes { background: linear-gradient(135deg, #3b82f6, #1d4ed8); color: #fff; }
+.footwear { background: linear-gradient(135deg, #10b981, #065f46); color: #fff; }
+.fund { background: linear-gradient(135deg, #ef4444, #b91c1c); color: #fff; }
+
+
+  
